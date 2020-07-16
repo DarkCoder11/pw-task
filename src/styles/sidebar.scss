@@ -1,0 +1,35 @@
+.layout-sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  z-index: 999;
+  overflow-y: auto;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include shadow(0 0 6px 0 rgba(0, 0, 0, 0.16));
+
+  &__drawer {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 999;
+    transform: translateY(-50%);
+    width: 35px;
+    background: transparent;
+  }
+
+  &__hidden {
+    left: 0 !important;
+  }
+
+  .layout-logo {
+    text-align: center;
+    margin: 24px 0;
+
+    img {
+      width: 50px;
+    }
+  }
+}

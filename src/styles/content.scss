@@ -1,0 +1,18 @@
+.layout-main {
+  @include transition(margin-left $transitionDuration);
+  padding: 66px 16px 16px 16px;
+}
+
+.layout-wrapper {
+  padding: 0;
+  min-height: 100vh;
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+.title {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
